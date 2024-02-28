@@ -1,0 +1,66 @@
+#btt,
+#GitBtt {
+    position: fixed;
+    bottom: 5%;
+    right: 3.75%;
+
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+
+    border: none;
+    opacity: 0.75;
+    transition: opacity 0.15s ease-in-out;
+
+    transition: right 1.5s ease-out;
+    text-decoration: none;
+
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+    animation: slidein 1s;
+}
+
+#GitBtt {
+    left: 3.75%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#contactus {
+    position: fixed;
+    bottom: 5%;
+    left: 3.75%;
+
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    color: black;
+
+}
+
+#btt {
+    display: none;
+}
+
+#btt:hover,
+#GitBtt:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 0px;
+}
+
+@keyframes slidein {
+    0% {
+        right: -2.5%;
+    }
+
+    100% {
+        right: 3.75%;
+    }
+}

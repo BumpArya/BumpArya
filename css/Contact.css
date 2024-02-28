@@ -1,0 +1,64 @@
+.contact {
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.git {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.git h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px
+}
+
+.gitform {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.gitform iframe {
+    width: 50%;
+    display: block;
+    height: 335px;
+}
+
+.gitform:hover {
+    box-shadow: 0px 0px 0px;
+    transform: scale(0.95);
+}
+
+.imagebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.imagebox img {
+    width: 80%;
+}
+
+@media screen and (max-width:786px) {
+    .imagebox {
+        width: 0%;
+        display: none;
+    }
+
+    .gitform iframe {
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+.HomePage {
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Home {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.Home img {
+    width: 300px;
+    height: 300px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 25px;
+
+    border: black 2px solid;
+}
+
+.Home h1 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.Home p {
+    text-align: center;
+}
+
+.Home button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+    margin-top: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+}
+
+.Home button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+    padding: 20px;
+    max-width: 800px;
+
+    font-size: 25px;
+    color: black;
+}
+
+.console-underscore {
+    display: inline-block;
+}

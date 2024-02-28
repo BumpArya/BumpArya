@@ -1,0 +1,81 @@
+.products {
+    height: max-content;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    margin-inline: auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.container h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
+
+    row-gap: 22.5px;
+    column-gap: 20px;
+
+    justify-content: center;
+    justify-items: center;
+}
+
+/* TODO make this more responsive */
+
+.card {
+    width: 240px;
+
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+
+    transition: 0.4s ease;
+    padding: 20px;
+    border-radius: 5px;
+
+    overflow-wrap: break-word !important;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__title {
+    /* height: 50px; */
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.card__description {
+    /* height: 75px; */
+    padding-bottom: 2.5%;
+}
+
+@media screen and (max-width: 650px) {
+
+    .card {
+        width: 86.67%;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px;
+    transform: scale(0.95);
+}
